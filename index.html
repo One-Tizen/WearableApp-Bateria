@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Batería</title>
+	<link rel="stylesheet"  href="lib/tau/themes/default/tau.min.css">
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div id="main" class="ui-page ui-page-active">
+		<div id="sections" class="ui-content">
+			<div>
+				<section class="section-active">
+					<div class="battery" id="battery"></div>
+				</section>
+				<section>
+					<header class="ui-header">
+					<h2 class="ui-title">Tiempo restante</h2>
+					</header>
+					<ul class="ui-listview">
+						<li>En espera<span class="time" id="waiting-time"></span></li>
+						<li>En uso<span class="time" id="watch-time"></span></li>
+						<li>Música<span class="time" id="music-time"></span></li>
+						<li>Otros<span class="time" id="game-time"></span></li>
+					</ul>
+				</section>
+				<section>
+					<header class="ui-header">
+						<h2 class="ui-title">Gráfico</h2>
+						<button type="button" class="ui-more ui-icon-overflow" onclick="tau.changePage('#setting');">Ajustes</button>
+					</header>
+					<div class="chart" id="chart">Seguimiento está desactivado. Puede activar esta función en el menú de ajustes.</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div id="setting" class="ui-page">
+		<header class="ui-header">
+			<h2 class="ui-title">Ajustes</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<div class="ui-switch">
+				<div class="ui-switch-text">Seguimiento</div>
+				<label class="ui-toggleswitch">
+					<input type="checkbox" class="ui-switch-input" id="trace-mode">
+					<div class="ui-switch-activation">
+						<div class="ui-switch-inneroffset">
+							<div class="ui-switch-handler"></div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="lib/tau/js/tau.min.js"></script>
+<script type="text/javascript" src="js/flotr2.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/trace.js"></script>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://LunaWolfCorp/Bateria" version="0.0.2" viewmodes="maximized">
+    <tizen:application id="YzqH6PW529.Batera" package="YzqH6PW529" required_version="2.2"/>
+    <author href="http://foro.lunawolf.es" email="marco@lunawolf.es">BadWolf &amp; TheDoll</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
+    <icon src="icon.png" height="170" width="170"/>
+    <name>Battery</name>
+    <name xml:lang="es-es">Batería</name>
+    <name xml:lang="eu-es">Batería</name>
+    <name xml:lang="gl-es">Batería</name>
+    <name xml:lang="ca-es">Batería</name>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>

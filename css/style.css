@@ -1,0 +1,48 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0px auto;
+    background-color: #222;
+}
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 320px;
+}
+.content-padding {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.content_text {
+	font-weight: bold;
+	font-size: 5em;
+	color: #fff;
+}
+.ui-content section {
+	overflow: hidden;
+	overflow-y: auto;
+}
+.battery {
+	height: 320px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 220px;
+	font-size: 1.4em;
+	text-align: center;
+}
+.time {
+	float: right;
+}
+.chart {
+	width: 320px;
+	height: 268px;
+	padding: 20px;
+	color: gray;
+	text-align: center;
+}
